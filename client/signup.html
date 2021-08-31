@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <title>Sign Up</title>
+
+    <style>
+        input {
+            width: 20rem;
+            margin: 0% 2rem;
+        }
+
+        h1 {
+            color: #39a6ff;
+        }
+    </style>
+</head>
+
+<body style="text-align: center; background-color: #0d1117; color: #bed1d9;">
+    <div class="flex flex-col pb-10 justify-center items-center h-screen">
+        <h1 class="text-2xl lg:text-3xl mb-4 font-semibold ">Signup to my Newsletter!</h1>
+        <div id="x" class="container border-2 border-red-600 rounded py-4 mx-10 " style="background-color: #161b22;">
+
+            <form action="/" method="POST" class="grid grid-cols-1 py-10 gap-5">
+                <!-- <label class="font-semibold">First Name</label> -->
+
+                <div class="flex flex justify-center items-center">
+                    <input type='text' name='FirstName' placeholder="First Name"
+                        class="rounded bg-gray-800 px-2 py-1 text-white" required autofocus>
+                </div>
+
+                <!-- <label class="font-semibold">last Name</label> -->
+                <div class="flex flex justify-center items-center">
+                    <input type='text' name='LastName' placeholder="Last Name"
+                        class="rounded bg-gray-800 px-2 py-1 text-white" required>
+                </div>
+
+                <!-- <label class="font-semibold">Email</label> -->
+                <div class="flex justify-center items-center">
+                    <input type='email' name='email' placeholder="Email"
+                        class="rounded bg-gray-800 px-2 py-1 text-white" required>
+                </div>
+                <div class="flex justify-center items-center">
+                    <button type="submit"
+                        class="no-underline mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Sign
+                        Up
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
