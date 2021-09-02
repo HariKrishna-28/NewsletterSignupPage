@@ -71,6 +71,9 @@ app.post("/failure", (req, res) => {
     res.redirect("/")
 })
 
+app.use(function (req, res, next) {
+    res.status(404).sendFile(__dirname + "/client/NotFound.html")
+})
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("Server running at Port 3000");
